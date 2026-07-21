@@ -6,7 +6,7 @@ export const routes: Routes = [
     {
         path:'',
         component: ListaProdutos,
-    }
+    },
     {
         path:'carrinho',
         component: Carrinho,
