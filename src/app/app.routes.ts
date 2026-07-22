@@ -1,14 +1,22 @@
 import { Routes } from '@angular/router';
 import { ListaProdutos } from './feautures/produtos/lista-produtos/lista-produtos';
 import { Carrinho } from './feautures/carrinho/carrinho/carrinho';
-
+import { Home } from './features/home/home/home';
 export const routes: Routes = [
     {
         path:'',
+        component: Home,
+    },
+    {
+        path:'produtos',
         component: ListaProdutos,
     },
     {
-        path:'carrinho',
+        path: 'carrinho',
         component: Carrinho,
+    },
+    {
+        path:'**',
+        redirectTo:'',
     },
 ];
